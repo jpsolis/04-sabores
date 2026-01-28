@@ -24,11 +24,11 @@ import { MessagesWsModule } from './messages-ws/messages-ws.module';
    TypeOrmModule.forRoot({
      // ssl: process.env.STAGE === 'prod',
       type: 'mysql',
-      host: process.env.DB_HOST,
+      host: 'localhost',
       port: 3306,
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
+      username: 'root',
+      password: 'Mon.chi2020.2025',
+      database: 'db_sabores',
       entities: [Restaurante, Colacion, Bebestible, User, Garzon],
       autoLoadEntities: true,
     
